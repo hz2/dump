@@ -30,5 +30,14 @@ git rebase origin/master
 
 ```bash
 git config --global http.postBuffer 524288000 # increase buffer size
+git config --local --list # within local repo
+git config --list --show-origin # local, global, system
+
+git config --local user.name "Your Name"
+git config --local user.email "you@example.com"
+```
+
+```bash
+git -c user.name=name -c user.email=you@example.com commit -m "msg"
 ```
 

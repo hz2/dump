@@ -41,3 +41,15 @@ git config --local user.email "you@example.com"
 git -c user.name=name -c user.email=you@example.com commit -m "msg"
 ```
 
+## `stash`
+
+- works like a stack, saving changes temporarily
+
+```bash
+git stash # save changes
+git stash list # list stashes
+git stash apply # apply latest stash
+git stash apply stash@{n} # apply specific stash
+git stash drop stash@{n} # delete specific stash
+git stash pop # apply and delete latest stash
+```

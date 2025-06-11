@@ -12,6 +12,7 @@ git log --graph --oneline --decorate --all
 ```bash
 git reset --soft <commit_hash> # reworking changes
 git reset --hard <commit_hash> # discard all changes
+git reset --hard origin/<branch of remote> # hard reset from a remote branch
 ```
 
 ## `rebase`

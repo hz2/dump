@@ -54,3 +54,10 @@ git stash apply stash@{n} # apply specific stash
 git stash drop stash@{n} # delete specific stash
 git stash pop # apply and delete latest stash
 ```
+
+## `remote`
+
+```bash
+git remote -v
+git remote show origin
+```

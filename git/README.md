@@ -65,6 +65,7 @@ git remote show origin
 ## hotfix
 
 ```bash
+git tag --list | grep -i "<version>"
 git checkout tags/<version> -b hotfix/<branch> # create a new branch from a tag
 git push --set-upstream origin hotfix/<branch> # push the new branch to remote
 

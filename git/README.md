@@ -61,3 +61,21 @@ git stash pop # apply and delete latest stash
 git remote -v
 git remote show origin
 ```
+
+## hotfix
+
+```bash
+git checkout tags/<version> -b hotfix/<branch> # create a new branch from a tag
+git push --set-upstream origin hotfix/<branch> # push the new branch to remote
+
+git fetch
+git checkout hotfix/<branch> # switch to the hotfix branch
+git checkout -b repair/<branch> # create a new branch for repairs
+
+# make changes, e.g. cherry-pick commits
+git cherry-pick <commit_hash> # apply specific commit to current branch
+# if conflicts or want to include all the changes with the conflicts
+git diff --name-only --diff-filter=U | xargs -I{} git checkout --theirs {}
+git add . # to stage all changes
+git push --set-upstream origin repair/<branch> # push the repair branch to remote
+```

@@ -24,3 +24,9 @@ cargo new --bin <bin>
 ```bash
 cargo publish --dry-run
 ```
+
+## `generate`
+
+```bash
+cargo generate --git <git link> --name <my-app>
+```

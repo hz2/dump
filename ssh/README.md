@@ -1,6 +1,6 @@
 # `ssh`
 
 ```bash
-"$(ssh-agent -s)"
-ssh-add ~/.ssh/<_algo>
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/<file> # id_ed25519
 ```

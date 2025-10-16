@@ -80,3 +80,12 @@ git diff --name-only --diff-filter=U | xargs -I{} git checkout --theirs {}
 git add . # to stage all changes
 git push --set-upstream origin repair/<branch> # push the repair branch to remote
 ```
+
+## squashing commits
+
+```bash
+git log --oneline # see past commits
+git rebase -i HEAD~<n> # last n commits
+# mark commits as 's' to squash
+git push --force-with-lease
+```

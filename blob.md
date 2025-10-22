@@ -17,3 +17,10 @@ cat <file> | xclip -selection clipboard # copy contents into clipboard register
 <link>/<filename>.<extension>#L<from>-L<to>
 
 example: https://github.com/hrsh7th/nvim-cmp/blob/main/doc/cmp.txt#L450-L500
+
+## symbolic link
+
+```shell
+ln -s <absolute-path> <link-path>
+ln -s <path/to/repo> ~/.config/nvim/ # links nvim config to the correct spot
+```

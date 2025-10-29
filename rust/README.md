@@ -92,3 +92,5 @@ imagine you have a box (`Option<T>`) that owns something:
 inside
 - if you already have a box that contains a reference (`Option<&mut T>`)
   - `&mut` says let me open it and pull out what's being referenced
+
+## every `let` statement is a pattern match
